@@ -71,20 +71,22 @@ li {
     color: #fd8300;
 }
 
-.top-menu li,a{
-    
-        margin-left: 10px;
-        text-decoration: none;
-        display: inline;
-        text-decoration-line: none;
+.top-menu li,
+a {
+
+    margin-left: 10px;
+    text-decoration: none;
+    display: inline;
+    text-decoration-line: none;
 }
-.socials li{
-    
-        margin-left: 10px;
-        text-decoration: none;
-        display: inline;
-        text-decoration-line: none;
-    
+
+.socials li {
+
+    margin-left: 10px;
+    text-decoration: none;
+    display: inline;
+    text-decoration-line: none;
+
 }
 
 .titlebox {
@@ -243,9 +245,6 @@ li {
     color: #666666;
     font-family: "Arial";
 }
-.content{
-}
-
 .content a {
     color: #fd8300;
 }
@@ -266,15 +265,17 @@ li {
     margin: 0;
 }
 
-.aside ul{
+.aside ul {
     margin: 0;
     background-color: #e4e4ec;
     list-style: none;
     padding: 0;
 }
-.aside li{
+
+.aside li {
     border-top: 1px solid #cdcddd;
 }
+
 .aside a {
     margin: 0;
     position: relative;
@@ -292,7 +293,8 @@ li {
     font-family: "Arial";
     background-color: #fd8300;
 }
-.parents{
+
+.parents {
     display: flex;
     padding: 30px;
 }
@@ -309,18 +311,21 @@ li {
 .houses {
     display: flex;
 }
-.houses a{
+
+.houses a {
     margin: 0;
 }
-.houses p{
+
+.houses p {
     width: 220px;
-height: 53px;
-font-size: 13px;
-line-height: 18px;
-color: #9999a6;
-font-family: "Arial";
+    height: 53px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+    font-family: "Arial";
 }
-.bottom-menu a:hover{
+
+.bottom-menu a:hover {
     color: #fd8300;
     text-decoration: underline;
 }
@@ -349,7 +354,8 @@ font-family: "Arial";
     background-image: url(/Rectangle\ 10\ copy\ 5.png);
 }
 
-.bottom-menu li,ul {
+.bottom-menu li,
+ul {
     list-style: none;
     display: block;
 }
