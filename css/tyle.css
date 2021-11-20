@@ -1,0 +1,377 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('..../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('..../fonts/RobotoSlab-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('..../fonts/RobotoSlab-Regular.woff2') format('woff2'),
+        url('..../fonts/RobotoSlab-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.body {
+    margin: 0 auto;
+}
+
+.header {
+    display: block;
+}
+
+.top-info {
+    background-color: #1f1f56;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.nav {
+    background-color: #1f1f56;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-menu ul,
+li {
+    padding: 0;
+}
+
+.top-menu a:hover {
+    color: #fd8300;
+}
+
+.top-menu a {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    color: #b1b1d2;
+    font-family: "Arial";
+}
+
+.top-menu {
+    justify-content: left;
+    padding: 0;
+}
+
+.socials a {
+    color: #fff;
+}
+
+.socials a:hover {
+    color: #fd8300;
+}
+
+.top-menu li,a{
+    
+        margin-left: 10px;
+        text-decoration: none;
+        display: inline;
+        text-decoration-line: none;
+}
+.socials li{
+    
+        margin-left: 10px;
+        text-decoration: none;
+        display: inline;
+        text-decoration-line: none;
+    
+}
+
+.titlebox {
+    display: block;
+    justify-content: space-between;
+    margin: 29px;
+    padding: 0;
+}
+
+.feedback a {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 2px solid #fd8300;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    content: "";
+}
+
+.feedback a:hover {
+    background-color: #fd8300;
+    color: black;
+}
+
+.title-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.phones p {
+    margin: 0;
+}
+
+.phones a {
+    font-size: 18px;
+    line-height: 24px;
+    color: #25252c;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.tell {
+    position: relative;
+}
+
+.tell::before {
+    content: "";
+    position: absolute;
+    left: -23px;
+    width: 15px;
+    height: 16px;
+    background-image: url(../images/phone.png);
+    background-repeat: no-repeat;
+}
+
+.emails p {
+    margin: 0;
+
+}
+
+.email {
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: underline;
+    color: #25252c;
+    font-family: "Arial";
+    position: relative;
+}
+
+.email::before {
+    content: "";
+    position: absolute;
+    left: -25px;
+    background-image: url(/images/email.png);
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+
+}
+
+.skype {
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    color: #25252c;
+    font-family: "Arial";
+}
+
+.skype::before {
+    content: "";
+    position: absolute;
+    background-image: url(/images/skype.png);
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 19px;
+    left: -25px;
+}
+
+.main-img {
+    background-image: url(/images/Rectangle\ 9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 0px 23px 0px;
+}
+
+.offer {
+    padding-top: 59px;
+    padding-bottom: 14px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.offer-2 {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.offer-2 p {
+    margin: 0;
+}
+
+.offertext {
+    padding-bottom: 19px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    font-family: "Arial";
+}
+
+.price {
+    padding-bottom: 44px;
+    font-size: 40px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+
+.content h1 {
+    font-size: 30px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.text {
+    width: 677px;
+    height: 193px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    font-family: "Arial";
+}
+.content{
+}
+
+.content a {
+    color: #fd8300;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+.aside h2 {
+    padding: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    border-radius: 2px;
+    background-color: #1f1f56;
+    margin: 0;
+}
+
+.aside ul{
+    margin: 0;
+    background-color: #e4e4ec;
+    list-style: none;
+    padding: 0;
+}
+.aside li{
+    border-top: 1px solid #cdcddd;
+}
+.aside a {
+    margin: 0;
+    position: relative;
+    display: block;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #25252c;
+    font-family: "Arial";
+}
+
+.aside a:hover {
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "Arial";
+    background-color: #fd8300;
+}
+.parents{
+    display: flex;
+    padding: 30px;
+}
+
+.others-projects p {
+    font-size: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab""Arial";
+}
+
+
+
+.houses {
+    display: flex;
+}
+.houses a{
+    margin: 0;
+}
+.houses p{
+    width: 220px;
+height: 53px;
+font-size: 13px;
+line-height: 18px;
+color: #9999a6;
+font-family: "Arial";
+}
+.bottom-menu a:hover{
+    color: #fd8300;
+    text-decoration: underline;
+}
+
+.information {
+    display: flex;
+    background-color: #ededf5;
+    justify-content: space-between;
+}
+
+.information li {
+    padding: 5px;
+}
+
+.information ul {
+    padding: 0;
+}
+
+.column {
+    margin: 0 7px;
+    width: 22.5%;
+    min-width: 219px;
+}
+
+.footer {
+    background-image: url(/Rectangle\ 10\ copy\ 5.png);
+}
+
+.bottom-menu li,ul {
+    list-style: none;
+    display: block;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin: 0 -1.25%;
+}
+
+.bottom-menu-2 li {
+    display: block;
+}
+
+.copyrite {
+    display: block;
+    box-sizing: border-box;
+    background-color: #dcdce6;
+}
+
+.copyrite p {
+    text-align: center;
+    margin: 0;
+    height: 50px;
+}
