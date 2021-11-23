@@ -19,7 +19,6 @@ element.style {
 }
 .body{
     margin: 0;
-    padding: 0;
 }
 
 .header {
@@ -63,7 +62,9 @@ li {
     justify-content: left;
     padding: 0;
 }
-
+.socials li:hover{
+    color: #fd8300;
+}
 .socials a {
     color: #fff;
 }
@@ -88,6 +89,9 @@ a {
     display: inline;
     text-decoration-line: none;
 
+}
+.instagram a:hover{
+    color: #fd8300;
 }
 
 .titlebox {
@@ -246,6 +250,9 @@ a {
     color: #666666;
     font-family: "Arial";
 }
+.text p {
+    padding: 0;
+}
 .content a {
     color: #fd8300;
 }
@@ -260,6 +267,9 @@ a {
     width: 713px;
     height: 1px;
     background-color: #e4e4ec;
+}
+.aside{
+    position: relative;
 }
 
 .aside h2 {
@@ -336,6 +346,10 @@ a {
     color: #fd8300;
     text-decoration: underline;
 }
+.bottom-menu-2 a:hover {
+    color: #fd8300;
+    text-decoration: underline;
+}
 
 .information{
     display: flex;
@@ -379,12 +393,14 @@ ul {
 
 .copyrite {
     display: block;
-    box-sizing: border-box;
     background-color: #dcdce6;
 }
 
 .copyrite p {
-    text-align: center;
     margin: 0;
-    height: 50px;
+    padding: 15px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+    text-align: center;
 }
