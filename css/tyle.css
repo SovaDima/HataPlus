@@ -6,7 +6,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Roboto Slab';
     src: url('..../fonts/RobotoSlab-Regular.woff2') format('woff2'),
@@ -15,8 +14,12 @@
     font-style: normal;
     font-display: swap;
 }
-.body {
+element.style {
     margin: 0;
+}
+.body{
+    margin: 0;
+    padding: 0;
 }
 
 .header {
@@ -250,6 +253,14 @@ a {
 .content a:hover {
     text-decoration: underline;
 }
+.line{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-image: url(../images/line.png);
+    width: 713px;
+    height: 1px;
+    background-color: #e4e4ec;
+}
 
 .aside h2 {
     padding: 15px;
@@ -298,19 +309,17 @@ a {
 }
 
 .others-projects p {
+    margin: 0;
     font-size: 24px;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab""Arial";
 }
-
-
-
-.houses {
+.houses{
     display: flex;
 }
 
-.houses a {
+.houses a{
     margin: 0;
 }
 
@@ -328,11 +337,9 @@ a {
     text-decoration: underline;
 }
 
-.information {
+.information{
     display: flex;
-    background-color: #ededf5;
-    justify-content: space-between;
-}
+    justify-content: space-between;}
 
 .information li {
     padding: 5px;
@@ -349,7 +356,9 @@ a {
 }
 
 .footer {
-    background-image: url(../Rectangle\ 10\ copy\ 5.png);
+    margin: 0;
+  width: 100%;
+  background-color: #ededf5;
 }
 
 .bottom-menu li,
