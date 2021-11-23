@@ -50,6 +50,7 @@ li {
 }
 
 .top-menu a {
+    
     margin: 0;
     font-size: 14px;
     letter-spacing: 2px;
@@ -102,6 +103,7 @@ a {
 }
 
 .feedback a {
+    color: black;
     display: inline-block;
     padding: 12px 25px;
     border: 2px solid #fd8300;
@@ -312,7 +314,17 @@ a {
     font-family: "Arial";
     background-color: #fd8300;
 }
-
+.add a {
+    padding-left: 30px;
+    color: black;
+}
+.add a:hover{
+    background-color: #cecedd;
+    color: black;
+} 
+.add{
+    display: block;
+}
 .parents {
     display: flex;
     padding: 30px;
@@ -331,6 +343,7 @@ a {
 
 .houses a{
     margin: 0;
+    color: black;
 }
 
 .houses p {
@@ -341,7 +354,10 @@ a {
     color: #9999a6;
     font-family: "Arial";
 }
-
+.bottom-menu a,
+.bottom-menu-2 a{
+    color: black;
+}
 .bottom-menu a:hover {
     color: #fd8300;
     text-decoration: underline;
@@ -395,7 +411,6 @@ ul {
     display: block;
     background-color: #dcdce6;
 }
-
 .copyrite p {
     margin: 0;
     padding: 15px;
