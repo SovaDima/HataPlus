@@ -18,7 +18,7 @@
 
 
 .body {
-    margin: 0 auto;
+    margin: 0;
 }
 
 .header {
@@ -159,7 +159,7 @@ a {
     content: "";
     position: absolute;
     left: -25px;
-    background-image: url(/images/email.png);
+    background-image: url(../images/email.png);
     background-repeat: no-repeat;
     width: 17px;
     height: 17px;
@@ -177,7 +177,7 @@ a {
 .skype::before {
     content: "";
     position: absolute;
-    background-image: url(/images/skype.png);
+    background-image: url(../images/skype.png);
     background-repeat: no-repeat;
     width: 19px;
     height: 19px;
@@ -185,7 +185,7 @@ a {
 }
 
 .main-img {
-    background-image: url(/images/Rectangle\ 9.png);
+    background-image: url(../images/Rectangle\ 9.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0px 0px 23px 0px;
@@ -351,7 +351,7 @@ a {
 }
 
 .footer {
-    background-image: url(/Rectangle\ 10\ copy\ 5.png);
+    background-image: url(../Rectangle\ 10\ copy\ 5.png);
 }
 
 .bottom-menu li,
