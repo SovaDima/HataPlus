@@ -14,10 +14,8 @@
     font-style: normal;
     font-display: swap;
 }
-element.style {
-    margin: 0;
-}
-.body{
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     margin: 0;
 }
 
@@ -244,19 +242,17 @@ a {
     font-family: "Roboto Slab";
 }
 
-.text {
-    width: 677px;
-    height: 193px;
+.content p {
     font-size: 14px;
     line-height: 24px;
     color: #666666;
     font-family: "Arial";
-}
-.text p {
-    padding: 0;
+    padding-bottom: 25px;
+    margin: 0;
 }
 .content a {
     color: #fd8300;
+    margin: 0px;
 }
 
 .content a:hover {
@@ -330,8 +326,9 @@ a {
     padding: 30px;
 }
 
-.others-projects p {
+.others-projects h1 {
     margin: 0;
+    padding-bottom: 25px;
     font-size: 24px;
     color: #24242b;
     font-weight: 700;
@@ -348,7 +345,6 @@ a {
 
 .houses p {
     width: 220px;
-    height: 53px;
     font-size: 13px;
     line-height: 18px;
     color: #9999a6;
