@@ -61,17 +61,6 @@ li {
     justify-content: left;
     padding: 0;
 }
-.socials li:hover{
-    color: #fd8300;
-}
-.socials a {
-    color: #fff;
-}
-
-.socials a:hover {
-    color: #fd8300;
-}
-
 .top-menu li,
 a {
 
@@ -89,8 +78,12 @@ a {
     text-decoration-line: none;
 
 }
-.instagram a:hover{
-    color: #fd8300;
+ a.facebook {
+background-image: url(../images/sprite.png);
+background-position: 0 0;
+}
+a.facebook:hover{
+    background-image: url(/images/sprite.png);
 }
 
 .titlebox {
@@ -122,6 +115,7 @@ a {
 
 .phones p {
     margin: 0;
+    line-height: 25px;
 }
 
 .phones a {
@@ -343,7 +337,7 @@ a {
     color: black;
 }
 
-.houses p {
+.houses h1 {
     width: 220px;
     font-size: 13px;
     line-height: 18px;
