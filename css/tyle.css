@@ -32,9 +32,9 @@ body{
     margin: 0 auto;
 }
 
-.nav {
+.nav  {
     background-color: #1f1f56;
-    display: flex;
+    display:flex;
     justify-content: space-between;
 }
 
@@ -70,7 +70,7 @@ a {
     text-decoration-line: none;
 }
 
-.socials li {
+.socials a{
 
     margin-left: 10px;
     text-decoration: none;
@@ -78,14 +78,38 @@ a {
     text-decoration-line: none;
 
 }
- a.facebook {
-background-image: url(../images/sprite.png);
-background-position: 0 0;
+
+.socials li{
+    display: inline-block;
+}
+.socials a{ 
+    display: inline-block;
+    background: url(../images/sprite.png) no-repeat;
+}
+a.facebook{
+    width: 10px;
+    height: 19px;
+    background-position: 0 -20px;
 }
 a.facebook:hover{
-    background-image: url(/images/sprite.png);
+    background-position: 0 0;
 }
-
+a.twiter{
+    width: 18px;
+    height: 15px;
+    background-position: -34px -20px;
+}
+a.twiter:hover{
+    background-position: -33px 0px;
+}
+a.instagram{
+    width: 18px;
+    height: 19px;
+    background-position: -12px -21px;
+}
+a.instagram:hover{
+    background-position:  -11px 0;
+}
 .titlebox {
     display: block;
     justify-content: space-between;
@@ -283,7 +307,14 @@ a.facebook:hover{
     padding: 0;
 }
 
-.aside li {
+.aside a {
+    content: "";
+    position: absolute;
+    background-image: url(../images/ctrl.png);
+    background-repeat: no-repeat;
+    width: 8px;
+    height:12px ;
+    right: -20px;
     border-top: 1px solid #cdcddd;
 }
 
@@ -370,7 +401,7 @@ a.facebook:hover{
 }
 
 .column {
-    margin: 0 7px;
+    margin: 1.25%;
     width: 22.5%;
     min-width: 219px;
 }
