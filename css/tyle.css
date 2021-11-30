@@ -121,7 +121,7 @@ a.facebook:hover {
 
 a.twiter {
     width: 18px;
-    height: 15px;
+    height: 17px;
     background-position: -34px -20px;
 }
 
@@ -221,7 +221,8 @@ a.instagram:hover {
 .email::before {
     content: "";
     position: absolute;
-    left: -30px;
+    left: -25px;
+    bottom: -1px;
     background-image: url(../images/email.png);
     background-repeat: no-repeat;
     width: 17px;
@@ -244,6 +245,7 @@ a.instagram:hover {
     background-repeat: no-repeat;
     width: 19px;
     height: 19px;
+    bottom: 0px;
     left: -25px;
 }
 
