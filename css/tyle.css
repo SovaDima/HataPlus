@@ -37,6 +37,7 @@ sup {
     margin: 0 -1.25%;
 }
 
+
 .column {
     margin: 1.25%;
     width: 22.5%;
@@ -566,6 +567,9 @@ font-family: "Arial";
 
 .footer p {
     padding-top: 25px;
+}
+.bottom-menu{
+    margin: 0;
 }
 
 .bottom-menu li,
