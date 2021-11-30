@@ -140,7 +140,7 @@ a.instagram:hover {
 }
 
 .titlebox {
-    padding: 29px;
+    padding: 17px 0;
 
 }
 
@@ -196,8 +196,9 @@ a.instagram:hover {
 .tell::before {
     content: "";
     position: absolute;
-    left: -23px;
-    width: 15px;
+    left: -25px;
+    bottom: 3px;
+    width: 20px;
     height: 16px;
     background-image: url(../images/phone.png);
     background-repeat: no-repeat;
@@ -220,7 +221,7 @@ a.instagram:hover {
 .email::before {
     content: "";
     position: absolute;
-    left: -25px;
+    left: -30px;
     background-image: url(../images/email.png);
     background-repeat: no-repeat;
     width: 17px;
@@ -287,11 +288,17 @@ a.instagram:hover {
 
 .price {
     padding-bottom: 44px;
+    line-height: 24px;
+    color: #fd8300;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Arial";
+}
+.price strong{
     font-size: 40px;
     line-height: 24px;
     color: #fd8300;
     font-weight: bold;
-    font-family: "Arial";
 }
 
 .content-price h1 {
@@ -375,8 +382,12 @@ font-family: "Arial";
 }
 
 .content a {
+    text-decoration: none;
     color: #fd8300;
     margin: 0px;
+}
+.content a:hover{
+    text-decoration: underline;
 }
 
 .content a:hover {
@@ -475,16 +486,17 @@ font-family: "Arial";
 
 .menu>li:hover .add {
     display: block;
+    
 }
 
 .add a {
     padding-left: 30px;
-    color: black;
+    color: #666;
 }
 
 .add a:hover {
     background-color: #cecedd;
-    color: black;
+    color: #666;
 }
 
 .add {
@@ -516,9 +528,18 @@ font-family: "Arial";
     color: black;
     text-decoration: none;
 }
+.houses h1{
+    padding: 0;
+    font-size: 14px;
+line-height: 24px;
+color: #1f1f56;
+font-weight: bold;
+font-family: "Arial";
+}
 
 
-.houses h1 {
+.houses p {
+    margin-top: -15px;
     width: 220px;
     font-size: 13px;
     line-height: 18px;
