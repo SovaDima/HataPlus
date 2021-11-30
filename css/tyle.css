@@ -492,6 +492,9 @@ a.instagram:hover {
 .footer a {
     text-decoration: none;
 }
+.footer p{
+padding-top: 25px;
+}
 
 .bottom-menu li,
 ul {
