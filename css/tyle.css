@@ -337,12 +337,17 @@ table {
 table>td{
     border-collapse: collapse;
 }
-tbody>tr{
-    text-align: center;
+th:first-child {
+    border-radius: 3px 0 0 0;
+}
+th:last-child, td:last-child {
+    text-align: right;
+}
+th:last-child {
+    border-radius: 0 3px 0 0;
 }
 .table th {
-    text-align: left;
-    padding: 30px;
+    padding: 12px 20px;
     font-size: 14px;
     line-height: 24px;
     color: #ffffff;
@@ -351,13 +356,20 @@ tbody>tr{
     background-color: #1f1f56;
 }
 .table td{
-    border-collapse: collapse;
-    padding: 10px;
+    padding: 10px 20px;
     background-color: #e4e4ec;
 }
 .table td:hover{
     background-color: #fd8300;
     color: #fff;
+}
+tr {
+    color: #666;
+    font-size: 14px;
+    line-height: 24px;
+}
+tbody tr:not(:last-child) {
+    border-bottom: 1px solid #cdcddd;
 }
 .under-table p{
     margin: 0;
@@ -365,6 +377,12 @@ font-size: 13px;
 line-height: 21px;
 color: #666666;
 font-family: "Arial";
+}
+thead th{
+    padding: 12px 20px;
+    text-align: left;
+    color: #fff;
+    background-color: #1f1f56;
 }
 .content h1 {
     font-size: 30px;
@@ -531,6 +549,7 @@ font-family: "Arial";
     text-decoration: none;
 }
 .houses h1{
+    margin: 0;
     padding: 0;
     font-size: 14px;
 line-height: 24px;
