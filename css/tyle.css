@@ -17,7 +17,7 @@
 }
 
 body {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: Arial;
     margin: 0;
 }
 
@@ -138,11 +138,12 @@ a.instagram {
 a.instagram:hover {
     background-position: -11px 0;
 }
-
 .titlebox {
     padding: 17px 0;
-
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    
 }
+
 
 .titlebox a {
     text-decoration: none;
@@ -304,6 +305,7 @@ a.instagram:hover {
 }
 
 .content-price h1 {
+    padding-top: 40px;
     font-size: 24px;
     line-height: 24px;
     color: #24242b;
@@ -314,7 +316,6 @@ a.instagram:hover {
 .content-price p{
     padding: 0;
     margin: 0;
-    padding-bottom: 25px;
     font-size: 14px;
     line-height: 24px;
     color: #666666;
@@ -346,6 +347,12 @@ th:last-child, td:last-child {
 th:last-child {
     border-radius: 0 3px 0 0;
 }
+tbody>tr:last-child>td:first-child {
+    border-radius: 0 3px 0;
+}
+tbody>tr:last-child>td:last-child {
+    border-radius: 0 0 3px 0;
+}
 .table th {
     padding: 12px 20px;
     font-size: 14px;
@@ -357,19 +364,26 @@ th:last-child {
 }
 .table td{
     padding: 10px 20px;
-    background-color: #e4e4ec;
+
 }
-.table td:hover{
-    background-color: #fd8300;
-    color: #fff;
-}
-tr {
+.table tr {
+    background-color:#e4e4ec;
     color: #666;
     font-size: 14px;
     line-height: 24px;
 }
+.table tr:hover{
+    background-color:#fd8300;
+    color: #fff;
+}
+td:last-child{
+    border-radius: 0px 0px 0px 3px;
+}
 tbody tr:not(:last-child) {
     border-bottom: 1px solid #cdcddd;
+}
+.under-table{
+    padding-bottom: 34px;
 }
 .under-table p{
     margin: 0;
@@ -536,7 +550,17 @@ thead th{
     font-size: 24px;
     color: #24242b;
     font-weight: 700;
-    font-family: "Roboto Slab","Arial";
+    font-family:"Roboto Slab","Arial";
+}
+.others-projects-price h1{
+    
+     margin: 0;
+    padding-bottom: 25px;
+    font-size: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family:"Roboto Slab","Arial";
+    
 }
 
 .houses {
@@ -592,7 +616,7 @@ font-family: "Arial";
 .information {
     display: flex;
     justify-content: space-between;
-    padding: 40px 0 30px 0;
+    padding: 30px 0 30px 0;
 }
 
 .information li {
