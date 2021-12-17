@@ -781,9 +781,9 @@ border: 1px solid #c5c5d4;
     content: "";
     border-bottom: 2px solid blue;
     border-left: 2px solid blue;
-    width: 9px;
+    width: 9gipx;
     height: 8px;
-    left: 2px;
+    left: 3px;
     transform: rotate(-45deg);
 }
 
