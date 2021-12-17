@@ -44,6 +44,12 @@ sup {
     min-width: 219px;
     box-sizing: border-box;
 }
+.column-price {
+    margin: 1.25%;
+    width: 22.5%;
+    min-width: 219px;
+    box-sizing: border-box;
+}
 
 .header {
     display: block;
@@ -138,10 +144,11 @@ a.instagram {
 a.instagram:hover {
     background-position: -11px 0;
 }
+
 .titlebox {
     padding: 17px 0;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
 }
 
 
@@ -297,11 +304,18 @@ a.instagram:hover {
     font-weight: bold;
     font-family: "Arial";
 }
-.price strong{
+
+.price strong {
     font-size: 40px;
     line-height: 24px;
     color: #fd8300;
     font-weight: bold;
+}
+
+.infopage {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
 }
 
 .content-price h1 {
@@ -313,7 +327,7 @@ a.instagram:hover {
     font-family: "Roboto Slab";
 }
 
-.content-price p{
+.content-price p {
     padding: 0;
     margin: 0;
     font-size: 14px;
@@ -321,12 +335,14 @@ a.instagram:hover {
     color: #666666;
     font-family: "Arial";
 }
-.content-price a{
+
+.content-price a {
     padding-top: 20px;
     text-decoration: none;
-    color:#fd8300;
+    color: #fd8300;
 }
-.content-price a:hover{
+
+.content-price a:hover {
     text-decoration: underline;
 }
 
@@ -335,24 +351,32 @@ table {
     border-collapse: collapse;
     width: 100%;
 }
-table>td{
+
+table>td {
     border-collapse: collapse;
 }
+
 th:first-child {
     border-radius: 3px 0 0 0;
 }
-th:last-child, td:last-child {
+
+th:last-child,
+td:last-child {
     text-align: right;
 }
+
 th:last-child {
     border-radius: 0 3px 0 0;
 }
+
 tbody>tr:last-child>td:first-child {
     border-radius: 0 3px 0;
 }
+
 tbody>tr:last-child>td:last-child {
     border-radius: 0 0 3px 0;
 }
+
 .table th {
     padding: 12px 20px;
     font-size: 14px;
@@ -362,42 +386,51 @@ tbody>tr:last-child>td:last-child {
     font-family: "Roboto Slab";
     background-color: #1f1f56;
 }
-.table td{
+
+.table td {
     padding: 10px 20px;
 
 }
+
 .table tr {
-    background-color:#e4e4ec;
+    background-color: #e4e4ec;
     color: #666;
     font-size: 14px;
     line-height: 24px;
 }
-.table tr:hover{
-    background-color:#fd8300;
+
+.table tr:hover {
+    background-color: #fd8300;
     color: #fff;
 }
-td:last-child{
+
+td:last-child {
     border-radius: 0px 0px 0px 3px;
 }
+
 tbody tr:not(:last-child) {
     border-bottom: 1px solid #cdcddd;
 }
-.under-table{
+
+.under-table {
     padding-bottom: 34px;
 }
-.under-table p{
+
+.under-table p {
     margin: 0;
-font-size: 13px;
-line-height: 21px;
-color: #666666;
-font-family: "Arial";
+    font-size: 13px;
+    line-height: 21px;
+    color: #666666;
+    font-family: "Arial";
 }
-thead th{
+
+thead th {
     padding: 12px 20px;
     text-align: left;
     color: #fff;
     background-color: #1f1f56;
 }
+
 .content h1 {
     font-size: 30px;
     line-height: 24px;
@@ -420,7 +453,8 @@ thead th{
     color: #fd8300;
     margin: 0px;
 }
-.content a:hover{
+
+.content a:hover {
     text-decoration: underline;
 }
 
@@ -436,7 +470,8 @@ thead th{
     height: 1px;
     background-color: #e4e4ec;
 }
-.line-price{
+
+.line-price {
     margin-top: 30px;
     margin-bottom: 30px;
     background-image: url(../images/line.png);
@@ -444,6 +479,19 @@ thead th{
     height: 1px;
     background-color: #e4e4ec;
 }
+.line-contacts {
+    margin: 0;
+    width: 100%;
+    height: 1px;
+    color: #000;
+    background-image: url(../images/line.png);
+}
+.menu-contacts {
+    padding: 36px 0 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .aside {
     position: relative;
 }
@@ -520,7 +568,7 @@ thead th{
 
 .menu>li:hover .add {
     display: block;
-    
+
 }
 
 .add a {
@@ -550,17 +598,18 @@ thead th{
     font-size: 24px;
     color: #24242b;
     font-weight: 700;
-    font-family:"Roboto Slab","Arial";
+    font-family: "Roboto Slab", "Arial";
 }
-.others-projects-price h1{
-    
-     margin: 0;
+
+.others-projects-price h1 {
+
+    margin: 0;
     padding-bottom: 25px;
     font-size: 24px;
     color: #24242b;
     font-weight: 700;
-    font-family:"Roboto Slab","Arial";
-    
+    font-family: "Roboto Slab", "Arial";
+
 }
 
 .houses {
@@ -572,19 +621,22 @@ thead th{
     color: black;
     text-decoration: none;
 }
-.houses h1{
+
+.houses h1 {
     margin: 0;
     padding: 0;
     font-size: 14px;
-line-height: 24px;
-color: #1f1f56;
-font-weight: bold;
-font-family: "Arial";
+    line-height: 24px;
+    color: #1f1f56;
+    font-weight: bold;
+    font-family: "Arial";
 }
-.houses a:hover{
+
+.houses a:hover {
     text-decoration: underline;
 }
-.houses a:hover~h1{
+
+.houses a:hover~h1 {
     text-decoration: underline;
 }
 
@@ -596,6 +648,100 @@ font-family: "Arial";
     line-height: 18px;
     color: #9999a6;
     font-family: "Arial";
+}
+.h1-price h1{
+    margin: 40px 27px 0 0 ;
+    font-size: 24px;
+color: #24242b;
+font-weight: 700;
+font-family: "Roboto Slab";
+}
+.infopage h2{
+    font-size: 14px;
+color: #24242b;
+font-weight: 700;
+font-family: "Roboto Slab";
+}
+.gray {
+font-size: 14px;
+color: #666666;
+font-family: "Arial";
+}
+.contacts-email{
+    text-decoration: underline;
+}
+.num {
+    text-decoration: none;
+    font-size: 18px;
+color: #25252c;
+font-weight: bold;
+font-family: "Arial";
+}
+.contacts a{
+    text-decoration: none;
+    font-size: 18px;
+color: #25252c;
+font-weight: bold;
+font-family: "Arial";
+}
+
+iframe {
+    border: none;
+    width: 466px;
+    height: 300px;
+}
+
+form h1 {
+    margin: 0;
+    margin-bottom: 21px;
+    font-size: 14px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.up input {
+    width: 231px;
+    padding: 11px 15px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+background-color: #ffffff;
+border: 1px solid #c5c5d4;
+}
+
+.down input {
+    width: 467px;
+    padding: 11px 15px;
+    margin-bottom: 9px;
+    box-sizing: border-box;
+    border-radius: 3px;
+background-color: #ffffff;
+border: 1px solid #c5c5d4;
+}
+
+textarea {
+    width: 467px;
+    height: 106px;
+    padding: 17px 15px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    border-radius: 3px;
+background-color: #ffffff;
+border: 1px solid #c5c5d4;
+}
+
+.button {
+    width: 467px;
+}
+
+input[type=submit] {
+    color: #fff;
+    width: 140px;
+    height: 41px;
+    border-radius: 21px;
+    background-color: #fd8300;
+    border: none;
 }
 
 .bottom-menu a,
