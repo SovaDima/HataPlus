@@ -690,7 +690,13 @@ iframe {
     width: 466px;
     height: 300px;
 }
-
+form ::placeholder{
+    font-size: 13px;
+line-height: 21px;
+color: #9999a6;
+font-style: italic;
+font-family: "Arial";
+}
 form h1 {
     margin: 0;
     margin-bottom: 21px;
@@ -731,11 +737,14 @@ background-color: #ffffff;
 border: 1px solid #c5c5d4;
 }
 
-.button {
+.button-main {
     width: 467px;
+    display: flex;
+    justify-content: space-around;
+   align-items: center;
 }
 
-input[type=submit] {
+.button input{
     color: #fff;
     width: 140px;
     height: 41px;
@@ -743,6 +752,41 @@ input[type=submit] {
     background-color: #fd8300;
     border: none;
 }
+.button input:hover{
+    color: #fff;
+    width: 140px;
+    height: 41px;
+    border-radius: 21px;
+    background-color: #d27714;
+    border: none;
+}
+.mycheck{
+    display: none;
+}
+.mycheck+label{
+    position: relative;
+    padding-left: 30px;
+}
+.mycheck+label:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+}
+.mycheck:checked+label::after{
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid blue;
+    border-left: 2px solid blue;
+    width: 9px;
+    height: 8px;
+    left: 2px;
+    transform: rotate(-45deg);
+}
+
 
 .bottom-menu a,
 .bottom-menu-2 a {
