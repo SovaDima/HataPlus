@@ -745,6 +745,7 @@ border: 1px solid #c5c5d4;
 }
 
 .button input{
+    cursor: pointer;
     color: #fff;
     width: 140px;
     height: 41px;
