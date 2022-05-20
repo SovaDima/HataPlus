@@ -28,15 +28,18 @@ sup {
 .wrapper {
     max-width: 960px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .row {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    text-align: center;
+    justify-content: center;
     margin: 0 -1.25%;
+    flex-wrap: wrap;
+    align-items: center;
+    
 }
-
 
 .column {
     margin: 1.25%;
@@ -44,6 +47,8 @@ sup {
     min-width: 219px;
     box-sizing: border-box;
 }
+
+
 .column-price {
     margin: 1.25%;
     width: 22.5%;
@@ -59,11 +64,66 @@ sup {
     background-color: #1f1f56;
 }
 
-
+.top-top-menu{
+     display: none;
+}
 .nav {
+    padding: 0 10px;
     background-color: #1f1f56;
     display: flex;
     justify-content: space-between;
+}
+
+.hamburger {
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.hamburger span,
+.hamburger span:before,
+.hamburger span:after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 5px;
+    background-color: orange;
+    border-radius: 5px;
+    top: 50%;
+    transition: box-shadow .25s ease-in-out;
+}
+
+.hamburger span {
+    transform: translateY(-50%);
+}
+
+.hamburger span:before {
+    top: 15px;
+}
+
+.hamburger span:after {
+    top: -15px;
+}
+
+.hamburger:hover span,
+.hamburger:hover span:before,
+.hamburger:hover span:after {
+    background-color: #444;
+}
+
+.hamburger:hover span {
+    box-shadow: 0 0 5px 2px rgba(0, 255, 0, 0.7);
+}
+
+.hamburger:hover span:before {
+    box-shadow: 0 0 5px 2px rgba(255, 0, 0, 0.7);
+}
+
+.hamburger:hover span:after {
+    box-shadow: 0 0 5px 2px rgba(0, 0, 255, 0.7);
 }
 
 .top-menu ul {
@@ -262,11 +322,12 @@ a.instagram:hover {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0px 0px 23px 0px;
+    min-height: 200px;
+    object-fit: cover;
+    object-position: 75%;
 }
 
-.main-content {
-    max-width: 713px;
-}
+
 
 .offer {
     padding-top: 59px;
@@ -466,7 +527,6 @@ thead th {
     margin-top: 30px;
     margin-bottom: 30px;
     background-image: url(../images/line.png);
-    width: 713px;
     height: 1px;
     background-color: #e4e4ec;
 }
@@ -479,6 +539,7 @@ thead th {
     height: 1px;
     background-color: #e4e4ec;
 }
+
 .line-contacts {
     margin: 0;
     width: 100%;
@@ -486,6 +547,7 @@ thead th {
     color: #000;
     background-image: url(../images/line.png);
 }
+
 .menu-contacts {
     padding: 36px 0 40px;
     display: flex;
@@ -494,6 +556,10 @@ thead th {
 
 .aside {
     position: relative;
+}
+
+.category-proj {
+    width: 100%;
 }
 
 .aside a {
@@ -588,8 +654,10 @@ thead th {
 
 .parents {
     display: flex;
-    justify-content: space-between;
-    padding: 30px 0;
+    justify-content: center;
+    padding: 30px 15px;
+    flex-direction: column-reverse;
+    column-gap: 20px;
 }
 
 .others-projects h1 {
@@ -649,40 +717,46 @@ thead th {
     color: #9999a6;
     font-family: "Arial";
 }
-.h1-price h1{
-    margin: 40px 27px 0 0 ;
+
+.h1-price h1 {
+    margin: 40px 27px 0 0;
     font-size: 24px;
-color: #24242b;
-font-weight: 700;
-font-family: "Roboto Slab";
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
 }
-.infopage h2{
+
+.infopage h2 {
     font-size: 14px;
-color: #24242b;
-font-weight: 700;
-font-family: "Roboto Slab";
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
 }
+
 .gray {
-font-size: 14px;
-color: #666666;
-font-family: "Arial";
+    font-size: 14px;
+    color: #666666;
+    font-family: "Arial";
 }
-.contacts-email{
+
+.contacts-email {
     text-decoration: underline;
 }
+
 .num {
     text-decoration: none;
     font-size: 18px;
-color: #25252c;
-font-weight: bold;
-font-family: "Arial";
+    color: #25252c;
+    font-weight: bold;
+    font-family: "Arial";
 }
-.contacts a{
+
+.contacts a {
     text-decoration: none;
     font-size: 18px;
-color: #25252c;
-font-weight: bold;
-font-family: "Arial";
+    color: #25252c;
+    font-weight: bold;
+    font-family: "Arial";
 }
 
 iframe {
@@ -690,13 +764,15 @@ iframe {
     width: 466px;
     height: 300px;
 }
-form ::placeholder{
+
+form ::placeholder {
     font-size: 13px;
-line-height: 21px;
-color: #9999a6;
-font-style: italic;
-font-family: "Arial";
+    line-height: 21px;
+    color: #9999a6;
+    font-style: italic;
+    font-family: "Arial";
 }
+
 form h1 {
     margin: 0;
     margin-bottom: 21px;
@@ -712,8 +788,8 @@ form h1 {
     margin-bottom: 10px;
     box-sizing: border-box;
     border-radius: 3px;
-background-color: #ffffff;
-border: 1px solid #c5c5d4;
+    background-color: #ffffff;
+    border: 1px solid #c5c5d4;
 }
 
 .down input {
@@ -722,8 +798,8 @@ border: 1px solid #c5c5d4;
     margin-bottom: 9px;
     box-sizing: border-box;
     border-radius: 3px;
-background-color: #ffffff;
-border: 1px solid #c5c5d4;
+    background-color: #ffffff;
+    border: 1px solid #c5c5d4;
 }
 
 textarea {
@@ -733,18 +809,18 @@ textarea {
     box-sizing: border-box;
     margin-bottom: 5px;
     border-radius: 3px;
-background-color: #ffffff;
-border: 1px solid #c5c5d4;
+    background-color: #ffffff;
+    border: 1px solid #c5c5d4;
 }
 
 .button-main {
     width: 467px;
     display: flex;
     justify-content: space-around;
-   align-items: center;
+    align-items: center;
 }
 
-.button input{
+.button input {
     cursor: pointer;
     color: #fff;
     width: 140px;
@@ -753,7 +829,8 @@ border: 1px solid #c5c5d4;
     background-color: #fd8300;
     border: none;
 }
-.button input:hover{
+
+.button input:hover {
     color: #fff;
     width: 140px;
     height: 41px;
@@ -761,14 +838,17 @@ border: 1px solid #c5c5d4;
     background-color: #d27714;
     border: none;
 }
-.mycheck{
+
+.mycheck {
     display: none;
 }
-.mycheck+label{
+
+.mycheck+label {
     position: relative;
     padding-left: 30px;
 }
-.mycheck+label:before{
+
+.mycheck+label:before {
     content: "";
     position: absolute;
     left: 0;
@@ -778,15 +858,16 @@ border: 1px solid #c5c5d4;
     height: 15px;
     border: 1px solid black;
 }
-.mycheck:checked+label::after{
+
+.mycheck:checked+label::after {
     position: absolute;
     content: "";
     border-bottom: 2px solid blue;
     border-left: 2px solid blue;
-    width: 9px;
+    width: 11px;
     border-radius: 2px;
-    height: 8px;
-    left: 3px;
+    height: 7px;
+    left: 2px;
     transform: rotate(-45deg);
 }
 
@@ -808,8 +889,10 @@ border: 1px solid #c5c5d4;
 
 .information {
     display: flex;
-    justify-content: space-between;
+    text-align: center;
     padding: 30px 0 10px 0;
+     
+     
 }
 
 .information li {
@@ -856,4 +939,65 @@ ul {
     line-height: 18px;
     color: #9999a6;
     text-align: center;
+}
+
+.main-content {
+    max-width: 713px;
+}
+
+
+
+
+
+@media screen and (min-width:699px) {
+    .parents {
+        flex-direction: row;
+
+    }
+
+    .category-proj {
+        width: 22.5%;
+    }
+}
+
+@media screen and (min-width:723px) {
+    .top-top-menu{
+        display: block;
+    }
+    .hamburger{
+        display: none;
+    }
+    
+}
+
+
+@media screen and(min-width:320px) {
+    .row {
+
+        display: flex;
+        justify-content: center;
+        margin: 0 -1.25%;
+        text-align: center;
+    }
+
+    .information {
+        flex-wrap: wrap;
+    }
+
+    .parents {
+        width: 320px;
+    }
+
+
+}
+
+@media screen and(min-width:960) {
+    .parents {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 30px 0;
+
+
+    }
+
 }
