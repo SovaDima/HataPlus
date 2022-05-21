@@ -33,7 +33,6 @@ sup {
 
 .row {
     display: flex;
-    text-align: center;
     justify-content: center;
     margin: 0 -1.25%;
     flex-wrap: wrap;
@@ -92,7 +91,7 @@ sup {
     height: 5px;
     background-color: orange;
     border-radius: 5px;
-    top: 50%;
+    top: 55%;
     transition: box-shadow .25s ease-in-out;
 }
 
@@ -375,8 +374,10 @@ a.instagram:hover {
 
 .infopage {
     display: flex;
-    justify-content: space-between;
+   
     margin-bottom: 35px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .content-price h1 {
@@ -535,7 +536,6 @@ thead th {
     margin-top: 30px;
     margin-bottom: 30px;
     background-image: url(../images/line.png);
-    width: 961px;
     height: 1px;
     background-color: #e4e4ec;
 }
@@ -549,9 +549,10 @@ thead th {
 }
 
 .menu-contacts {
-    padding: 36px 0 40px;
+    padding: 36px  15px;
     display: flex;
-    justify-content: space-between;
+    
+    flex-wrap: wrap;
 }
 
 .aside {
@@ -760,6 +761,7 @@ thead th {
 }
 
 iframe {
+    padding-right: 20px;
     border: none;
     width: 466px;
     height: 300px;
@@ -772,7 +774,9 @@ form ::placeholder {
     font-style: italic;
     font-family: "Arial";
 }
-
+form{
+    max-width: 320px;
+}
 form h1 {
     margin: 0;
     margin-bottom: 21px;
@@ -793,7 +797,7 @@ form h1 {
 }
 
 .down input {
-    width: 467px;
+    width: 290px;
     padding: 11px 15px;
     margin-bottom: 9px;
     box-sizing: border-box;
@@ -803,7 +807,7 @@ form h1 {
 }
 
 textarea {
-    width: 467px;
+    width: 290px;
     height: 106px;
     padding: 17px 15px;
     box-sizing: border-box;
@@ -813,9 +817,12 @@ textarea {
     border: 1px solid #c5c5d4;
 }
 
+.button{
+    padding-bottom: 20px;
+}
 .button-main {
     width: 467px;
-    display: flex;
+    
     justify-content: space-around;
     align-items: center;
 }
@@ -828,6 +835,7 @@ textarea {
     border-radius: 21px;
     background-color: #fd8300;
     border: none;
+    
 }
 
 .button input:hover {
@@ -891,6 +899,8 @@ textarea {
     display: flex;
     text-align: center;
     padding: 30px 0 10px 0;
+    flex-wrap: wrap;
+    justify-content: center;
      
      
 }
@@ -946,8 +956,31 @@ ul {
 }
 
 
-
-
+@media screen and (min-width:470px){
+    form{
+        max-width: 100%;
+    }
+    .down input{
+        width: 467px;
+    }      
+    textarea{
+        width: 467px;
+    }
+    .menu-contacts{
+        justify-content: space-between;
+    }
+    .button-main{
+        display: flex;
+    }
+}
+@media screen and (max-width:625px) {
+    .table{
+        overflow-x: scroll;
+    }
+    table{
+        width: 625px;
+    }
+}
 
 @media screen and (min-width:699px) {
     .parents {
@@ -967,31 +1000,34 @@ ul {
     .hamburger{
         display: none;
     }
+    .infopage{
+        justify-content: space-between;
+    }
     
 }
-
+@media screen and (min-width:800px) {
+.menu-contacts{
+    flex-wrap: nowrap;
+}
+}
 
 @media screen and(min-width:320px) {
     .row {
-
         display: flex;
         justify-content: center;
         margin: 0 -1.25%;
         text-align: center;
     }
-
-    .information {
-        flex-wrap: wrap;
-    }
-
     .parents {
         width: 320px;
     }
-
-
 }
-
-@media screen and(min-width:960) {
+@media screen and (min-width:980px) {
+    .information{
+        flex-wrap: nowrap;
+    }
+}
+@media screen and(min-width:960px) {
     .parents {
         display: flex;
         flex-direction: column-reverse;
@@ -999,5 +1035,6 @@ ul {
 
 
     }
+    
 
 }
