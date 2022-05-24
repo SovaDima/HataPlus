@@ -36,7 +36,7 @@ sup {
     justify-content: space-around;
     margin: 0 -1.25%;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
 
 }
 
@@ -68,7 +68,6 @@ sup {
 }
 
 .nav {
-    padding: 0 10px;
     background-color: #1f1f56;
     display: flex;
     justify-content: space-between;
@@ -334,7 +333,6 @@ a.instagram:hover {
     padding-bottom: 14px;
     font-size: 30px;
     letter-spacing: 2px;
-    line-height: 24px;
     color: #ffffff;
     font-weight: 700;
     font-family: "Roboto Slab";
@@ -496,7 +494,6 @@ thead th {
 
 .content h1 {
     font-size: 30px;
-    line-height: 24px;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
@@ -625,7 +622,6 @@ thead th {
     display: block;
     padding: 15px;
     font-size: 14px;
-    line-height: 24px;
     color: #25252c;
     font-family: "Arial";
 }
@@ -890,6 +886,11 @@ textarea {
 .bottom-menu,
 .bottom-menu-2 {
     text-align: center;
+    color:#666;
+}
+.bottom-menu p,
+.bottom-menu-2 p{
+    color:#666;
 }
 
 .bottom-menu a,
