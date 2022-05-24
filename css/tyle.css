@@ -513,6 +513,7 @@ thead th {
     text-decoration: none;
     color: #fd8300;
     margin: 0px;
+    font-weight:bold;
 }
 
 .content a:hover {
@@ -652,6 +653,16 @@ thead th {
 .add {
     display: none;
 }
+.houses figure {
+position: relative;
+}
+.houses figure a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
 
 
 .parents {
