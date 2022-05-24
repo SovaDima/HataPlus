@@ -209,7 +209,17 @@ a.instagram:hover {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 
 }
-
+.titlebox{
+    position: relative;
+}
+ .palka::after{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 40%;
+    top:30%;
+    background-color: #e4e4ec;
+} 
 
 .titlebox a {
     text-decoration: none;
