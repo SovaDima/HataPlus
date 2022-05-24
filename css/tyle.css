@@ -213,6 +213,7 @@ a.instagram:hover {
     position: relative;
 }
  .palka::after{
+     display: none;
     position: absolute;
     content: "";
     width: 1px;
@@ -1070,6 +1071,10 @@ ul {
     .information {
         flex-wrap: nowrap;
     }
+    .palka::after{
+        display: block;
+    }
+     
 }
 
 @media screen and(min-width:960px) {
@@ -1080,6 +1085,7 @@ ul {
 
 
     }
+  
 
 
 }
