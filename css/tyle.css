@@ -514,6 +514,8 @@ thead th {
     color: #fd8300;
     margin: 0px;
     font-weight:bold;
+    line-height: 24px;
+    font-size: 14px;
 }
 
 .content a:hover {
