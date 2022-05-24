@@ -345,6 +345,7 @@ a.instagram:hover {
 
 .offer-2 p {
     margin: 0;
+    text-transform: uppercase;
 }
 
 .offertext {
@@ -611,7 +612,7 @@ thead th {
     transform: rotate(45deg);
 }
 
-.menu>li {
+.menu>li+li {
     border-top: 1px solid #cdcddd;
 }
 
