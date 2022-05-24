@@ -886,16 +886,10 @@ textarea {
 .bottom-menu,
 .bottom-menu-2 {
     text-align: center;
-    color:#666;
 }
-.bottom-menu p,
-.bottom-menu-2 p{
-    color:#666;
-}
-
 .bottom-menu a,
 .bottom-menu-2 a {
-    color: black;
+    color: #666;
 }
 
 .bottom-menu a:hover {
