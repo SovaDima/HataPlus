@@ -336,6 +336,7 @@ a.instagram:hover {
     color: #ffffff;
     font-weight: 700;
     font-family: "Roboto Slab";
+    text-transform: uppercase;
 }
 
 .offer-2 {
@@ -345,7 +346,7 @@ a.instagram:hover {
 
 .offer-2 p {
     margin: 0;
-    text-transform: uppercase;
+    
 }
 
 .offertext {
