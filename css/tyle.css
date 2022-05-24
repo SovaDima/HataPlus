@@ -33,7 +33,7 @@ sup {
 
 .row {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0 -1.25%;
     flex-wrap: wrap;
     align-items: center;
@@ -541,13 +541,13 @@ thead th {
     background-color: #e4e4ec;
 }
 
-/* .line-contacts {
-    margin: 0;
+.line-contacts {
+    margin: 50px 0;
     width: 100%;
     height: 1px;
     color: #000;
     background-image: url(../images/line.png);
-} */
+}
 
 .menu-contacts {
     padding: 0;
@@ -555,7 +555,8 @@ thead th {
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 20px;
-
+    text-align:center;
+    row-gap: 20px;
 }
 
 .aside {
@@ -791,7 +792,7 @@ form h1 {
 }
 
 .up input {
-    width: 231px;
+    width: 100%;
     padding: 11px 15px;
     margin-bottom: 10px;
     box-sizing: border-box;
@@ -801,7 +802,7 @@ form h1 {
 }
 
 .down input {
-    width: 290px;
+    width: 100%;
     padding: 11px 15px;
     margin-bottom: 9px;
     box-sizing: border-box;
@@ -811,7 +812,7 @@ form h1 {
 }
 
 textarea {
-    width: 290px;
+    width: 100%;
     height: 106px;
     padding: 17px 15px;
     box-sizing: border-box;
@@ -829,6 +830,9 @@ textarea {
 
     justify-content: space-around;
     align-items: center;
+}
+.button-main label{
+    font-size: 13px;
 }
 
 .button input {
@@ -972,9 +976,6 @@ ul {
     textarea {
         width: 467px;
     }
-
-   
-
     .button-main {
         display: flex;
     }
