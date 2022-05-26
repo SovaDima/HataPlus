@@ -926,6 +926,7 @@ textarea {
     border-radius: 2px;
     height: 7px;
     left: 2px;
+    top: 0%;
     transform: rotate(-45deg);
 }
 
