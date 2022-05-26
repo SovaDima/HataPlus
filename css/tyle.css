@@ -209,19 +209,21 @@ a.instagram:hover {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 
 }
-.titlebox{
+
+.titlebox {
     position: relative;
 }
- .palka::after{
-     display: none;
+
+.palka::after {
+    display: none;
     position: absolute;
     content: "";
     width: 1px;
     height: 40%;
-    top:30%;
+    top: 30%;
     left: 50%;
     background-color: #e4e4ec;
-} 
+}
 
 .titlebox a {
     text-decoration: none;
@@ -265,6 +267,14 @@ a.instagram:hover {
     line-height: 24px;
     color: #25252c;
     font-weight: bold;
+    font-family: "Arial";
+}
+
+.mail {
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: underline;
+    color: #25252c;
     font-family: "Arial";
 }
 
@@ -358,7 +368,7 @@ a.instagram:hover {
 
 .offer-2 p {
     margin: 0;
-    
+
 }
 
 .offertext {
@@ -526,7 +536,7 @@ thead th {
     text-decoration: none;
     color: #fd8300;
     margin: 0px;
-    font-weight:bold;
+    font-weight: bold;
     line-height: 24px;
     font-size: 14px;
 }
@@ -569,7 +579,8 @@ thead th {
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 20px;
-    text-align:center;
+    text-align: center;
+    align-items: center;
     row-gap: 20px;
 }
 
@@ -668,16 +679,19 @@ thead th {
 .add {
     display: none;
 }
+
 .houses figure {
-position: relative;
+    position: relative;
 }
-.houses figure a{
+
+.houses figure a {
     position: absolute;
     width: 100%;
     height: 100%;
 }
-figure a:hover ~h3{
-text-decoration: underline;
+
+figure a:hover~h3 {
+    text-decoration: underline;
 }
 
 
@@ -854,10 +868,12 @@ textarea {
 
 .button-main {
 
-    justify-content: space-around;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: baseline;
+    column-gap: 10px;
 }
-.button-main label{
+
+.button-main label {
     font-size: 13px;
 }
 
@@ -917,6 +933,7 @@ textarea {
 .bottom-menu-2 {
     text-align: center;
 }
+
 .bottom-menu a,
 .bottom-menu-2 a {
     color: #666;
@@ -1001,6 +1018,7 @@ ul {
     textarea {
         width: 467px;
     }
+
     .button-main {
         display: flex;
     }
@@ -1071,10 +1089,11 @@ ul {
     .information {
         flex-wrap: nowrap;
     }
-    .palka::after{
+
+    .palka::after {
         display: block;
     }
-     
+
 }
 
 @media screen and(min-width:960px) {
@@ -1085,7 +1104,7 @@ ul {
 
 
     }
-  
+
 
 
 }
